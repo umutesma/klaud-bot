@@ -64,20 +64,4 @@ client.on('message', message=> // Commands
 
 });
 
-client.on('message', message=> // Commands
-{
-    if (message.content.toLowerCase() == 'umut') message.channel.send('umut meşgul canım bana söyle')
-    if (message.content.toLowerCase() == 'falcon') message.channel.send('Yaralı')
-    if (message.content.toLowerCase() == 'bartu') message.channel.send('aslan yelesi saçlım :heart_exclamation:')
-    if (message.content.toLowerCase() == 'buse') message.channel.send('elit kekoyum limonlu soda içiyorum')
-    if (message.content.includes(userID)) message.channel.send("uyuyom şuan cevap veremem")
-
-});
-
-client.on("message", function(message) {
-    if (message.author.id === userID)
-        if (message.content == 'ayşe')
-            message.channel.send(':heartpulse:')
-});
-
 client.login(token);
